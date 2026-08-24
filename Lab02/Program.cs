@@ -5,21 +5,50 @@
  * No.        : NA
  * Course     : GI113 Computer Programming (GI)
  */
-namespace Demo1
+namespace Lab02
 {
 
-    interface class Program
+
+    internal class Program
+
     {
 
         static void Main(string[] args)
         {
-            string bossName = "Kirin"; //string เก็บข้อมูลเปป็นชุดตัวอักษร หรือ ที่เรียกว่าข้อความ
-            char rank = 's';    //char เก็บข้อมูลได้ตัวอักษรอันเดียว
-            int maxHp = 240;    //int เป็น Integer เก็บขอมูลจำนวนเต็มบวก,เต็มลบ, 0
+            string bossName = "Kirin";
+            string name = "Nergigante";
+            string name2 = "Teostra";
+            string name3 = "Vaal Hazak";
+            string name4 = "Xeno'jiiva";
+            string name5 = "Lunastra";
+            char rank = 'S';
+            int level = 7;
+            int maxHp = 240;
             int currentHp = 175;
-            float attackPower = 42.5f; //float ใส่ทศนิยมได้แต่ต้องเติม f ลงท้าย
-            double critMultipier = 1.75; //double ใส่ทศนิยมได้หลายตัวกว่า float และไม่ต้องเติม f
-            bool isBoss = true;         //ใส่ได้แค่สองค่า True/False
-            Console.WriteLine("Hello,World");
+            float attackPower = 42.5f;
+            double critMultiplier = 1.75;
+            bool isBoss = true;
+            Console.WriteLine("===== BOSS STATUS: INITIAL =====");
+            Console.WriteLine($"Name: {bossName}");
+            Console.WriteLine($"Rank: {rank}");
+            Console.WriteLine($"HP: {currentHp} /  {maxHp}");
+            Console.WriteLine($"Attack Power: {attackPower}");
+            Console.WriteLine($"Critical Multiplier: {critMultiplier}");
+            Console.WriteLine($"Is Boss: {isBoss}");
+            Console.WriteLine();
+
+            int hpPercent = currentHp * 100 / maxHp;
+            Console.WriteLine($"HP Percentage: {hpPercent}%");
+            Console.WriteLine();
+
+            Console.WriteLine($"Kirin takes 60 damage!");
+            currentHp = currentHp - 60;
+            Console.WriteLine();
+
+            Console.WriteLine("===== BOSS STATUS: AFTER DAMAGE =====");
+            Console.WriteLine($"HP: {currentHp} /  {maxHp}");
+            hpPercent = currentHp * 100 / maxHp;
+            Console.WriteLine($"HP Percent: {hpPercent}%");
         }
     }
+}
