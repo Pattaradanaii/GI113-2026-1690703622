@@ -37,7 +37,26 @@
             //{
             //   Console.WriteLine("The door stays shut.");
             //}
-            Console.WriteLine("GAME TITLE:");
+
+
+            int heroLukeHp = 100;
+            int heroLukeMp = 100;
+            int mageSeekerhp = 100;
+            int mageSeekermp = 100;
+            int heroAtk = 50;
+            int skill1Atk = 100;
+            int skill2Heal = 50;
+            int useItem = 100;
+
+
+
+            Console.WriteLine("GAME TITLE:LORD OF ADEN");
+            Console.WriteLine("HERO LUKE ENCOUNTER A MAGESEEKER");
+            Console.WriteLine("ACTION 1: ATTACK");
+            Console.WriteLine("ACTION 2: USE SKILL 1 FIREBLADE SLASH");
+            Console.WriteLine("ACTION 3: USE SKILL 2 HEAL");
+            Console.WriteLine("ACTION 4: USE ITEM TOTEM OF ANTI MAGIC");
+
         }
     }
 }
